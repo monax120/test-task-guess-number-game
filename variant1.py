@@ -2,9 +2,15 @@
 numberOfTries = 0
 
 def numberGuess(startRange, endRange):
+    """Generates random number from given range
+
+    Args:
+        startRange (int): Starting number of the range
+        endRange (int): End point of the range
+    """
     if startRange > endRange:
         return True
-    
+     
     midRange = (startRange + endRange)//2
    
     global numberOfTries
